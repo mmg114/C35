@@ -11,7 +11,7 @@ public class Main {
         //Numerico
         short numero = 1234;
         byte b = 127;
-        int a = 25/18;
+        int a = 25;
         long id = 1234567890;
         // Numerico .decimal
         double altura = 1.75;
