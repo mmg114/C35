@@ -6,6 +6,9 @@ public class Colombiano {
     private String nombre;
     private String apellido;
 
+    public Colombiano() {
+    }
+
     public Colombiano(Long numeroDeCedula, String nombre, String apellido) {
         this.numeroDeCedula = numeroDeCedula;
         this.nombre = nombre;

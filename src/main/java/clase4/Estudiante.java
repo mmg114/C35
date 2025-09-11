@@ -43,5 +43,11 @@ public class Estudiante {
         return "El estudiante se matriculo con éxito.";
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
