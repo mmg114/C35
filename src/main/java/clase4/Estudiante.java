@@ -8,7 +8,7 @@ public class Estudiante {
     private Long id;
     private String curso;
     private char genero;
-
+    public  String actividadesExtra;
 
     Estudiante(){
 
@@ -39,7 +39,7 @@ public class Estudiante {
         return true;
     }
 
-    public String matricularse(){
+    public static String matricularse(){
         return "El estudiante se matriculo con éxito.";
     }
 

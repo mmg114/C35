@@ -1,9 +1,13 @@
 package clase4;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
-        final int edad=12;
+        int edad=12;
+        edad=13;
         Estudiante estudiante= new Estudiante(21,"Mauricio","Guzman",2000L,"Ingenieria de sistemas",'M');
         Estudiante estudiante2= new Estudiante();
         Estudiante estudiante3= new Estudiante("Wendy","Sierra");
@@ -20,7 +24,14 @@ public class Main {
         System.out.println("--------------------------------");
         Colombiano colombiano2 = new Colombiano();
         System.out.println(colombiano2.getNumeroDeCedula());
+        System.out.println("--------------------------------");
 
+
+        System.out.println(Estudiante.matricularse());
+        Date date = new Date();
+        System.out.println( date.toInstant());
+
+        System.out.println(LocalDate.now());
     }
 
 }
