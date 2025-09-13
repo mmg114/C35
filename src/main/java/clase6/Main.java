@@ -1,5 +1,6 @@
 package clase6;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,9 +22,13 @@ public class Main {
         Arrays.stream(nombres).forEach(System.out::println);
 
         System.out.println("----------------------------------");
+        //ASI SE CREA UNA LISTA<ACA VA EL TIPO DE DATO>
         List<String> nombreLista = new ArrayList<>();
         nombreLista.add("Mauricio");
-        //nombreLista.forEach(System.out::println);
+        nombreLista.add("carlos");
+        nombreLista.forEach(System.out::println);
+
+        System.out.println(nombreLista.stream().filter(n-> n.contains("M")).count());
 
 
 
