@@ -40,7 +40,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Es otro dia ");
-
+                break;
         }
 
     }
