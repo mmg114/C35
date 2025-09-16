@@ -1,9 +1,14 @@
 package clase7;
 
+
+import java.util.logging.Logger;
+
 public class Main {
+
     public static void main(String[] args) {
 
-            Animal animal = new Animal("Animalito");
+
+          Animal animal = new Animal("Animalito");
             Gato    gato = new Gato("MICHI");
             Perro perro  = new Perro("FIRULAIS");
 
@@ -11,9 +16,6 @@ public class Main {
             animal.hacerSonido();
             gato.hacerSonido();
             perro.hacerSonido();
-
-
-
 
     }
 }
