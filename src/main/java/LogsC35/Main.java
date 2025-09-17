@@ -14,21 +14,22 @@ public class Main {
     private static final Logger log = Logger.getLogger(Main.class.getName());
     public static void main(String[] args) {
 
-        int edad=18;
+        int edad=22;
 
         if (edad >18) {
             log.info("es mayor de edad");
+            throw new RuntimeException("ES Mayor de edad");
         }else{
             log.info("es menor de edad");
         }
-
+        Errores error = Errores.ERROR_EN_DIVICION_POR_0;
 
         try {
-            int resultado=   dividir(10,1);
+            int resultado=   dividir(10,0);
             log.info("Esto es el resultado "+resultado);
 
         }catch (Exception e){
-            log.log(Level.SEVERE,"error al dividir " +e.getCause());
+            log.log(Level.SEVERE,error.name() +e.getCause());
         }
         //DATOS FECHA
 

@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-          Animal animal = new Animal("Animalito");
+       /*   Animal animal = new Animal("Animalito");
             Gato    gato = new Gato("MICHI");
             Perro perro  = new Perro("FIRULAIS");
 
@@ -16,6 +16,17 @@ public class Main {
             animal.hacerSonido();
             gato.hacerSonido();
             perro.hacerSonido();
+*/
+        Animal miSegundaMascota = new Gato("michi");
+        Animal miPrimeraMascota = new Perro("Firulais");
+        miPrimeraMascota.hacerSonido();
+        miSegundaMascota.hacerSonido();
+
+
+        Pago pago;
+
+        pago = new TarjetaDebito();
+
 
     }
 }
